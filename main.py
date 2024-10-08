@@ -6,17 +6,17 @@ import Calc_track as Clt
 class Interfece:
     def __init__(self):
         self.window = tkinter.Tk()
-        self.window.geometry('300x200')
+        self.window.geometry('400x200')
         self.window.title('Полёт тела под углом к горизонту')
         self.window.resizable(False, False)
         self.lbl_speed = tkinter.Label(self.window, text="Начальная скорость в м/с")
         self.lbl_speed.place(x=10, y=30)
         self.ent_speed = tkinter.Entry(self.window)
-        self.ent_speed.place(x=150, y=30)
+        self.ent_speed.place(x=170, y=30)
         self.lbl_angle = tkinter.Label(self.window, text="Начальный угол в градусах")
         self.lbl_angle.place(x=10, y=60)
         self.ent_angle = tkinter.Entry(self.window)
-        self.ent_angle.place(x=150, y=60)
+        self.ent_angle.place(x=170, y=60)
         self.btn = tkinter.Button(self.window, text='Построить график', command=self.create)
         self.btn.place(x=70, y=100)
 
